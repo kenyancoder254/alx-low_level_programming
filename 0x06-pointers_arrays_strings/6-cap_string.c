@@ -16,7 +16,7 @@ char *cap_string(char *str)
                 *ptr = toupper(*ptr);
                 capitalize_next = 0;
         }
-        else if (!isalpha(*ptr))
+        if (!isalpha(*ptr))
         {
                 capitalize_next = 1;
         }
