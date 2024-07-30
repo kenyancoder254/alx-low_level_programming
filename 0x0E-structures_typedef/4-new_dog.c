@@ -13,6 +13,7 @@ struct dog *d;
 d = malloc(sizeof(struct dog));
 if (d == NULL)
 {
+free(d);
 return (NULL);
 }
 d->name = name;
